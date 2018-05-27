@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFDB.RemoveStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDB"
+        mc:Ignorable="d"
+        Title="AddStudent" Height="190" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="350" Background="#FFA42222">
+            <Button Name="exit" Background="Transparent" Margin="319,0,10,0" Style ="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="exit_Click">
+                <Path Data="M7.1999998,0L16,8.7999997 24.799999,0 32,7.1999998 23.2,16 32,24.799999 24.799999,32 16,23.2 7.1999998,32 0,24.799999 8.7999997,16 0,7.1999998z" Stretch="Uniform" Fill="White" Width="15" Height="15" RenderTransformOrigin="0.5,0.5"/>
+            </Button>
+        </Grid>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Center" Margin="15,40,0,0" VerticalAlignment="Top" Width="335" FontFamily="Century Gothic"/>
+        <TextBox x:Name="parametr" HorizontalAlignment="Left" Height="23" Margin="15,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontFamily="Century Gothic"/>
+        <Button x:Name="submit" Content="Remove" HorizontalAlignment="Left" Margin="15,142,0,0" VerticalAlignment="Top" Width="320" FontFamily="Century Gothic" FontSize="14" Background="#FFA42222" Foreground="White" BorderBrush="{x:Null}" Style ="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="submit_Click"/>
+    </Grid>
+</Window>

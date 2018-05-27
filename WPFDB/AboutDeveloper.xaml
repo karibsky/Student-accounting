@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFDB.AboutDeveloper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDB"
+        mc:Ignorable="d"
+        Title="AddStudent" Height="150" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="350" Background="#FFA42222"/>
+        <Label x:Name="label" Content="Simple program working with MySQL using WPF" HorizontalAlignment="Center" Margin="15,40,35,0" VerticalAlignment="Top" Width="300" FontFamily="Century Gothic"/>
+        <Button x:Name="submit" Content="OK" HorizontalAlignment="Left" Margin="15,112,0,0" VerticalAlignment="Top" Width="320" FontFamily="Century Gothic" FontSize="14" Background="#FFA42222" Foreground="White" BorderBrush="{x:Null}" Style ="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="submit_Click"/>
+        <Label x:Name="label_Copy" Content="developed by Karibsky" HorizontalAlignment="Center" Margin="15,70,185,0" VerticalAlignment="Top" Width="150" FontFamily="Century Gothic"/>
+        <TextBlock HorizontalAlignment="Center" Margin="170,76,45,0" VerticalAlignment="Top" Width="135" FontFamily="Century Gothic" ><Hyperlink NavigateUri="https://karibsky.github.io/">www.karibsky.github.io</Hyperlink></TextBlock>
+    </Grid>
+</Window>
